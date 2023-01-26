@@ -129,6 +129,7 @@ body {
 /* ============Header============= */
 .page-header {
     border-bottom: 1px solid var(--descr-ligh-txt-color);
+    box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -216,10 +217,15 @@ body {
 
 /* ============Hero============= */
 .hero {
-    background-color: var(--dark-bcg-color);
     text-align: center;
     padding-top: 188px;
     padding-bottom: 188px;
+
+    background-color: var(--dark-bcg-color);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-img.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;       
 }
 
 .main-title {
@@ -284,6 +290,8 @@ body {
     padding-right: 16px;
     padding-left: 16px;
     text-align: center;
+
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .team-list {
@@ -341,6 +349,14 @@ body {
 
     border: 1px solid var(--descr-ligh-txt-color);
     border-top: none;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+    border: 0.5px solid var(--light-bcg-color);
+    border-top: none;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
 .portfolio-list {
